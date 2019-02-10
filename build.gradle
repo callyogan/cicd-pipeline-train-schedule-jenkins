@@ -12,6 +12,10 @@ node {
 //declare a build task
 task build
 
+task postprint {
+   println "this is the last line of code!"
+}
+
 //declare a task to create a zip of the app
 task zip(type: Zip) {
 	from ('.') {
